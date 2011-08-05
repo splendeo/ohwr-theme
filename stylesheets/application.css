@@ -1,0 +1,120 @@
+/* Load the default Redmine stylesheet */
+@import url(../../../stylesheets/application.css);
+
+html {
+  background: #d7d7d7 url(../images/background.png);
+}
+
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  margin: 0 100px 100px 100px;
+  color: #707070;
+  background: white;
+  box-shadow: 0px 0px 8px rgba(0,0,0,.5);
+  -moz-box-shadow: 0px 0px 8px rgba(0,0,0,.5);
+  -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,.5);
+}
+
+/*
+* Links
+*/
+a, a:link, a:visited {
+  color: #8c8c8c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #b3b3b3;
+  text-decoration: underline;
+}
+
+
+/*
+* Layout
+*/
+#wrapper,
+#main,
+#footer {
+  background: none;
+}
+
+#main {
+  margin: 0;
+}
+
+#content {
+  margin: 1em 1.4em 1em 1em;
+  width: 77%;
+  overflow: auto;
+  border-top: solid 1px #fff;
+  border-right: solid 1px #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+* Footer
+*/
+#footer {
+  border: none;
+  padding-top: 75px;
+  background: white url(../images/footer-background.png) center top no-repeat;
+}
+
+#footer a:hover { text-decoration: none; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.red{ color: red; }
+.green{ color: green; }
+.blue{ color: blue; }
+.yellow{ color: yellow; }
+.orange{ color: orange; }
+.fuchsia{ color: fuchsia; }
+
+#ohr-logo { float: left; }
+.intro-text { margin-left: 100px; }
+
+/* staging env is red */
+body.environment-staging #top-menu { background-color: #DD1111; }
+body.environment-staging #header   { background-color: #FF3F3F; }
+body.environment-staging #main a   { color: #CC0000; }
+
+/* development env is green */
+body.environment-development #top-menu { background-color: #11DD11; }
+body.environment-development #header   { background-color: #66f566; }
+body.environment-development #main a   { color: #00CC00; }
+
+
+
+
+
+
+
