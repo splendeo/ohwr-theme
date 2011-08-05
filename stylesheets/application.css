@@ -37,12 +37,17 @@ a:hover {
 */
 #wrapper,
 #main,
-#footer {
-  background: none;
+#footer,
+#content {
+  background: transparent;
 }
 
 #main {
-  margin: 0;
+  margin: 50px 0 0 0;
+}
+
+#wrapper{
+  background: white url(../images/white-header-logo.png) 80% -100px no-repeat;
 }
 
 #content {
@@ -59,14 +64,25 @@ a:hover {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 1.6em;
   font-weight: normal;
-  padding-left: 150px;
+  background: transparent url(../images/header-logo.png) 14px 0 no-repeat;
+  height: 150px;
+  padding: 15px;
+}
+
+#top-menu ul {
+  padding-top: 100px;
+  padding-left: 140px;
+}
+
+#top-menu #account ul {
+  padding: 0;
 }
 
 #top-menu #loggedas {
  color: #bbb;
 }
 
-#top-menu a {
+#top-menu a, #header a {
   font-weight: normal;
   color: #7c7c7c;
 }
@@ -80,14 +96,13 @@ a:hover {
 #top-menu .my-page,
 #top-menu .projects,
 #top-menu .administration {
+  bottom: 0;
   float: left;
-  margin-top: 140px;
-  padding: 0px 10px;
 }
 
 #top-menu .help {
-  position: absolute;
-  top: 100px;
+  position: fixed;
+  top: 115px;
   left: 0;
   color: white;
   font-size: 1.1em;
@@ -99,26 +114,28 @@ a:hover {
 * Header
 */
 #header {
-  background: transparent url(../images/header-logo.png) 14px 0 no-repeat;
-  padding-left: 146px;
-  height: 150px;
+  background: none;
+  padding: 0;
+  margin: -130px 20px 0px 154px;
   position: relative;
 }
 
 #header h1 {
-  position: relative;
-  top: 25px;
   font-family: 'PT Sans Narrow', 'HelveticaNeue-CondensedBold', 'Helvetica Neue', sans-serif;
   color:  #b4b4b4;
   font-size: 48px;
-  font-style: normal;
   font-weight: bold;
   text-shadow: 1px 1px 2px rgba(0,0,0,.7);
-  text-decoration: none;
   text-transform: none;
   letter-spacing: 0.029em;
   word-spacing: -0.041em;
-  line-height: 1.09;
+  line-height: 1.1;
+}
+
+#header #quick-search {
+  float: none;
+  right: 0;
+  position: absolute;
 }
 
 
