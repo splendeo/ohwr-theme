@@ -1,6 +1,9 @@
 /* Load the default Redmine stylesheet */
 @import url(../../../stylesheets/application.css);
 
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400);
+
 html {
   background: #d7d7d7 url(../images/background.png);
 }
@@ -19,13 +22,12 @@ body{
 * Links
 */
 a, a:link, a:visited {
-  color: #8c8c8c;
+  color: #222;
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
-  color: #b3b3b3;
   text-decoration: underline;
 }
 
@@ -47,8 +49,30 @@ a:hover {
   margin: 1em 1.4em 1em 1em;
   width: 77%;
   overflow: auto;
-  border-top: solid 1px #fff;
-  border-right: solid 1px #fff;
+}
+
+/*
+* Top-menu
+*/
+#top-menu {
+  background: none;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.6em;
+  font-weight: normal;
+}
+
+#top-menu #loggedas {
+ color: #bbb;
+}
+
+#top-menu a {
+  font-weight: normal;
+  color: #7c7c7c;
+}
+
+#top-menu a:hover {
+  color: black;
+  text-decoration: none;
 }
 
 
