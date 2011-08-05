@@ -59,6 +59,7 @@ a:hover {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 1.6em;
   font-weight: normal;
+  padding-left: 150px;
 }
 
 #top-menu #loggedas {
@@ -75,15 +76,38 @@ a:hover {
   text-decoration: none;
 }
 
+#top-menu .home,
+#top-menu .my-page,
+#top-menu .projects,
+#top-menu .administration {
+  float: left;
+  margin-top: 140px;
+  padding: 0px 10px;
+}
+
+#top-menu .help {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  color: white;
+  font-size: 1.1em;
+  padding: 2px 18px;
+  background-color: rgba(50,50,50,0.5);
+}
+
 /*
 * Header
 */
 #header {
-  background: none;
-  padding: 0.5em 1em 2.3em 1em;
+  background: transparent url(../images/header-logo.png) 14px 0 no-repeat;
+  padding-left: 146px;
+  height: 150px;
+  position: relative;
 }
 
 #header h1 {
+  position: relative;
+  top: 25px;
   font-family: 'PT Sans Narrow', 'HelveticaNeue-CondensedBold', 'Helvetica Neue', sans-serif;
   color:  #b4b4b4;
   font-size: 48px;
