@@ -22,7 +22,7 @@ body{
 * Links
 */
 a, a:link, a:visited {
-  color: #222;
+  color: #003264;
   text-decoration: none;
   font-weight: bold;
 }
@@ -30,6 +30,21 @@ a, a:link, a:visited {
 a:hover {
   text-decoration: underline;
 }
+
+/*
+* Headings
+*/
+h1, h2, h3, h4, h5 {
+  font-family: 'PT Sans Narrow', 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+}
+
+h2, h3, h4, .wiki h1, .wiki h2, .wiki h3 {
+  border-bottom: none;
+}
+
+h1, .wiki h1 { font-size: 30px; }
+h2, .wiki h2 { font-size: 24px; }
+h3, .wiki h3 { font-size: 18px; }
 
 
 /*
@@ -52,7 +67,6 @@ a:hover {
 
 #content {
   margin: 1em 1.4em 1em 1em;
-  width: 77%;
   overflow: auto;
 }
 
@@ -78,8 +92,10 @@ a:hover {
   padding: 0;
 }
 
-#top-menu #loggedas {
- color: #bbb;
+#top-menu #loggedas, #top-menu #account {
+  color: #bbb;
+  font-size: 80%;
+  margin: 0;
 }
 
 #top-menu a, #header a {
@@ -98,6 +114,7 @@ a:hover {
 #top-menu .administration {
   bottom: 0;
   float: left;
+  margin: 0 35px 0 0;
 }
 
 #top-menu .help {
@@ -121,7 +138,6 @@ a:hover {
 }
 
 #header h1 {
-  font-family: 'PT Sans Narrow', 'HelveticaNeue-CondensedBold', 'Helvetica Neue', sans-serif;
   color:  #b4b4b4;
   font-size: 48px;
   font-weight: bold;
@@ -138,6 +154,12 @@ a:hover {
   position: absolute;
 }
 
+/*
+* Home
+*/
+
+.controller-welcome #content h2     { display: none; }
+.controller-welcome #content div h2 { display: block; }
 
 
 
@@ -186,19 +208,10 @@ a:hover {
 .orange{ color: orange; }
 .fuchsia{ color: fuchsia; }
 
-#ohr-logo { float: left; }
-.intro-text { margin-left: 100px; }
-
 /* staging env is red */
 body.environment-staging #top-menu { background-color: #DD1111; }
 body.environment-staging #header   { background-color: #FF3F3F; }
 body.environment-staging #main a   { color: #CC0000; }
-
-/* development env is green */
-body.environment-development #top-menu { background-color: #11DD11; }
-body.environment-development #header   { background-color: #66f566; }
-body.environment-development #main a   { color: #00CC00; }
-
 
 
 
