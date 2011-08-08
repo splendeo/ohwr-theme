@@ -9,7 +9,7 @@ html {
 }
 
 body{
-  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+  font-family: Arial, Verdana, sans-serif;
   margin: 0 100px 100px 100px;
   color: #707070;
   background: white;
@@ -75,26 +75,16 @@ h3, .wiki h3 { font-size: 18px; }
 */
 #top-menu {
   background: none;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 1.6em;
+  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
   font-weight: normal;
-  background: transparent url(../images/header-logo.png) 14px 0 no-repeat;
-  height: 150px;
-  padding: 15px;
+  font-size: 16px;
+  padding: 5px 15px 0 15px;
 }
 
-#top-menu ul {
-  padding-top: 100px;
-  padding-left: 140px;
-}
-
-#top-menu #account ul {
-  padding: 0;
-}
+#top-menu #account ul { padding: 0; }
 
 #top-menu #loggedas, #top-menu #account {
   color: #bbb;
-  font-size: 80%;
   margin: 0;
 }
 
@@ -112,9 +102,8 @@ h3, .wiki h3 { font-size: 18px; }
 #top-menu .my-page,
 #top-menu .projects,
 #top-menu .administration {
-  bottom: 0;
   float: left;
-  margin: 0 35px 0 0;
+  margin: 0 15px 0 0;
 }
 
 #top-menu .help {
@@ -122,7 +111,7 @@ h3, .wiki h3 { font-size: 18px; }
   top: 115px;
   left: 0;
   color: white;
-  font-size: 1.1em;
+  font-size: 1.5em;
   padding: 2px 18px;
   background-color: rgba(50,50,50,0.5);
 }
@@ -132,9 +121,11 @@ h3, .wiki h3 { font-size: 18px; }
 */
 #header {
   background: none;
-  padding: 0;
-  margin: -130px 20px 0px 154px;
+  margin: 0;
+  padding: 24px 20px 0px 160px;
+  height: 120px;
   position: relative;
+  background: transparent url(../images/header-logo.png) 14px 0 no-repeat;
 }
 
 #header h1 {
@@ -149,9 +140,7 @@ h3, .wiki h3 { font-size: 18px; }
 }
 
 #header #quick-search {
-  float: none;
-  right: 0;
-  position: absolute;
+  margin-top: -25px;
 }
 
 /*
@@ -160,6 +149,52 @@ h3, .wiki h3 { font-size: 18px; }
 
 .controller-welcome #content h2     { display: none; }
 .controller-welcome #content div h2 { display: block; }
+
+/**** Project menus ****/
+
+/* menu */
+#main-menu {
+  left: 160px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Link color */
+#main-menu li a {
+  color: #707070;
+  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+}
+#main-menu li a.selected { color: #111111; }
+#main-menu li a:hover, #main-menu li a.selected:hover { color: #000000; }
+
+/* Background */
+#main-menu li {
+  background-color: #FFFFFF;
+  border-color: #DDDDDD;
+  border-width: 1px 1px 1px 1px;
+}
+#main-menu li:hover {background-color: #DDDDDD;}
+#main-menu li a, #main-menu li a:hover {}
+#main-menu li a.selected, #main-menu li a.selected:hover {background-color: #EEEEEE;}
+
+#main-menu li a, #main-menu li a.selected, #main-menu li a:hover {text-shadow: none;} /* Remove drop shadow */
+
+/* Project-menu first/last tab bottom roundings (for KHTML [Konqueror], Gecko [Mozilla] and WebKit [Safari/Chrome]) */
+#main-menu li:first-child  {
+    -khtml-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+}
+
+#main-menu li:last-child {
+    -khtml-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+}
+
+
 
 
 
