@@ -181,15 +181,19 @@ h3, .wiki h3 { font-size: 18px; text-transform: uppercase; }
   font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
   font-weight: normal;
   font-size: 15px;
-  text-shadow: 0px 1px 1px #ffffff;
+  text-shadow: 0px 1px 1px white;
 }
 #main-menu li a.selected {
   color: #111111;
-  box-shadow: inset 0px 1px 3px rgba(0,0,0,.5);
-  -moz-box-shadow: inset 0px 1px 3px rgba(0,0,0,.5);
-  -webkit-box-shadow: inset 0px 1px 3px rgba(0,0,0,.5);
+  box-shadow: inset 0px 1px 2px rgba(0,0,0,.5);
+  -moz-box-shadow: inset 0px 1px 2px rgba(0,0,0,.5);
+  -webkit-box-shadow: inset 0px 1px 2px rgba(0,0,0,.5);
 }
-#main-menu li a:hover, #main-menu li a.selected:hover { color: #000000; }
+#main-menu li a:hover, #main-menu li a.selected:hover {
+  background-color: #909090;
+  color: white;
+  text-shadow: 0px -1px 1px black;
+}
 
 /* Background */
 #main-menu {
