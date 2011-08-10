@@ -57,10 +57,6 @@ h3, .wiki h3 { font-size: 18px; text-transform: uppercase; }
   background: transparent;
 }
 
-#main {
-  margin: 50px 0 0 0;
-}
-
 #wrapper{
   background: white url(../images/white-header-logo.png) 80% -100px no-repeat;
 }
