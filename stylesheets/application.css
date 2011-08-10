@@ -31,20 +31,21 @@ a:hover {
   text-decoration: underline;
 }
 
+
+
 /*
 * Headings
 */
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h2, h3, h4, h5, .wiki h1, .wiki h2, .wiki h3, .wiki h4, .wiki h5 {
   font-family: 'PT Sans Narrow', 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
-}
-
-h2, h3, h4, .wiki h1, .wiki h2, .wiki h3 {
   border-bottom: none;
 }
 
 h1, .wiki h1 { font-size: 30px; text-transform: uppercase; }
 h2, .wiki h2 { font-size: 24px; text-transform: uppercase; }
 h3, .wiki h3 { font-size: 18px; text-transform: uppercase; }
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { text-decoration: none; }
 
 
 /*
@@ -154,13 +155,6 @@ h3, .wiki h3 { font-size: 18px; text-transform: uppercase; }
   margin-top: -25px;
 }
 
-/*
-* Home
-*/
-
-.controller-welcome #content h2     { display: none; }
-.controller-welcome #content div h2 { display: block; }
-
 /**** Project menus ****/
 
 /* menu */
@@ -203,20 +197,6 @@ h3, .wiki h3 { font-size: 18px; text-transform: uppercase; }
   border-width: 0 1px;
   margin: 0 1px;
 }
-/*
-#main-menu li:hover {background-color: #DDDDDD;}
-#main-menu li a, #main-menu li a:hover {}
-#main-menu li a.selected, #main-menu li a.selected:hover {background-color: #EEEEEE;}
-*/
-
-
-
-
-
-
-
-
-
 
 
 /*
@@ -230,13 +210,45 @@ h3, .wiki h3 { font-size: 18px; text-transform: uppercase; }
 
 #footer a:hover { text-decoration: none; }
 
+/*
+* Home
+*/
 
+.controller-welcome .splitcontentleft  { width: 67%; }
+.controller-welcome .splitcontentright { width: 30%; }
 
+.controller-welcome a.wiki-anchor { display: none; }
 
+.controller-welcome #projects,
+.controller-welcome #welcome,
+.controller-welcome #featured-projects-title {
+  margin: 0 0 10px 0;
+  padding: 0 0 0 5px;
+  display: block;
+  color: white;
+  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+}
 
+.controller-welcome #projects a       {
+  color: white;
+  font-weight: normal;
+}
+.controller-welcome #projects a:hover { text-decoration: none;}
 
-
-
+.controller-welcome #projects {
+  background: transparent url(../images/home-projects-banner.png) 0 0 no-repeat;
+  height: 112px;
+}
+.controller-welcome #welcome  {
+  background: transparent url(../images/home-welcome-background.png) 0 0 no-repeat;
+  height: 112px;
+}
+.controller-welcome #featured-projects-title  {
+  background: transparent url(../images/home-featured-projects-title-background.png) 0 0 repeat-x;
+  height: 25px;
+}
 
 
 
