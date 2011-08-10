@@ -266,6 +266,16 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { text-decoration: no
   font-weight: bold;
 }
 
+.controller-welcome .news {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #a8a8a8;
+}
+
+div.news h3 {
+  background: none;
+  padding: 0;
+}
 
 
 
