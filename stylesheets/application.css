@@ -69,7 +69,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { text-decoration: no
 }
 
 #content {
-  margin: 1em 1.4em 1em 1em;
+  margin: 10px 20px;
   overflow: auto;
 }
 
@@ -223,7 +223,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { text-decoration: no
 
 .controller-welcome #projects a,
 .controller-welcome #welcome,
-.controller-welcome #featured-projects-title {
+#featured-projects-title {
   margin: 0 0 10px 0;
   padding: 0 0 0 5px;
   display: block;
@@ -243,7 +243,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { text-decoration: no
   background: transparent url(../images/home-welcome-background.png) 0 0 no-repeat;
   height: 112px;
 }
-.controller-welcome #featured-projects-title  {
+#featured-projects-title  {
   background: transparent url(../images/home-featured-projects-title-background.png) 0 0 repeat-x;
   height: 25px;
 }
@@ -253,15 +253,16 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { text-decoration: no
   background: none;
 }
 
-.controller-welcome #featured-projects-box {
+#featured-projects-box {
   border: 1px solid #a8a8a8;
+  background: none;
 }
 
-.controller-welcome #featured-projects-list    { padding-left: 5px; }
-.controller-welcome #featured-projects-list li { list-style-type: none; }
-.controller-welcome #featured-projects-list h4 { margin: 5px 0 0 0; }
+#featured-projects-list    { padding-left: 5px; }
+#featured-projects-list li { list-style-type: none; }
+#featured-projects-list h4 { margin: 5px 0 0 0; }
 
-.controller-welcome #featured-projects-list .date {
+#featured-projects-list .date {
   text-size: 60%;
   font-weight: bold;
 }
@@ -277,8 +278,32 @@ div.news h3 {
   padding: 0;
 }
 
+/*
+* Projet Home
+*/
 
+.controller-projects.action-index .splitcontentleft  { width: 60%; }
+.controller-projects.action-index .splitcontentright { width: 36%; }
 
+.controller-projects.action-index h2 {
+  margin: 0 0 10px 0;
+  padding: 0 0 0 5px;
+  display: block;
+  color: white;
+  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  background: transparent url(../images/projects-index-header-background.png) 0 0 no-repeat;
+  height: 112px;
+}
+
+.controller-projects.action-index fieldset { padding: 5px 0; }
+.controller-projects.action-index li.root { border-top: 1px solid #a8a8a8; }
+.controller-projects.action-index .contextual {
+  margin-top: 90px;
+  background-color: rgba(255,255,255,.8);
+  padding: 4px;
+}
 
 
 
