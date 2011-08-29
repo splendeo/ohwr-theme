@@ -242,7 +242,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { text-decoration: no
   height: 112px;
 }
 .controller-welcome #welcome  {
-  background: transparent url(../images/home-welcome-background.png) 0 0 no-repeat;
+  background: transparent url(../images/home-welcome-background.png) 0 0 repeat-x;
   height: 112px;
 }
 #featured-projects-title  {
