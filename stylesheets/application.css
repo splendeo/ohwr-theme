@@ -233,6 +233,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { text-decoration: no
   font-size: 20px;
 }
 
+.controller-welcome #projects { padding: 0; margin-bottom: 30px; }
+
 .controller-welcome #projects a:hover { text-decoration: none;}
 
 .controller-welcome #projects a {
