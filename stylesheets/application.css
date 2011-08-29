@@ -36,24 +36,40 @@ a:hover {
 /*
 * Headings
 */
-h1, h2, h3, h4, h5, h2, h3, h4, h5, .wiki h1, .wiki h2, .wiki h3, .wiki h4, .wiki h5 {
+h1, h2, .wiki h1, .wiki h2 {
   font-family: 'PT Sans Narrow', 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
   border-bottom: none;
 }
 
+h3, h4, h5, .wiki h3, .wiki h4, .wiki h5 {
+  font-family: 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+  border-bottom: none;
+  font-weight: normal;
+}
+
 h1, .wiki h1 { font-size: 34px; text-transform: uppercase; }
 h2, .wiki h2 { font-size: 28px; text-transform: uppercase; }
-h3, .wiki h3 { font-size: 22px; text-transform: uppercase; }
-h4, .wiki h4 { font-size: 18px; }
-h4, .wiki h5 { font-size: 15px; }
+h3, .wiki h3 { font-size: 18px; }
+h4, .wiki h4 { font-size: 16px; }
+h4, .wiki h5 { font-size: 14px; }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { text-decoration: none; }
+
+div.issues h3,
+div.members h3,
+div.news h3,
+div.projects h3 {
+    background: none;
+    padding: 0;
+}
 
 /*
 * Forms/Input fields
 */
 
-input[type="text"], input[type="password"], textarea {
+input[type="text"],
+input[type="password"],
+textarea {
   font-size: 13px;
   border: 1px solid #dadada;
   background: #bbbbbb url(../images/input-background.png) 0 top repeat-x;
@@ -71,7 +87,10 @@ input[type="submit"] {
   padding: 4px 15px;
 }
 
-input[type="text"]:focus, input[type="password"]:focus, textarea:focus, input[type="submit"]:focus {
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="submit"]:focus,
+textarea:focus {
   border: 1px solid #222222;
   background: #f1f1f1;
 }
@@ -317,53 +336,6 @@ div.news h3 {
 }
 
 /*
-* Projet Home
-*/
-
-.controller-projects.action-index .splitcontentleft  { width: 60%; }
-.controller-projects.action-index .splitcontentright { width: 36%; }
-
-.controller-projects.action-index h2 {
-  margin: 0 0 10px 0;
-  padding: 0 0 0 5px;
-  display: block;
-  color: white;
-  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
-  font-weight: normal;
-  font-size: 20px;
-  background: transparent url(../images/projects-index-header-background.png) -15px 0 repeat-x;
-  height: 112px;
-}
-
-.controller-projects.action-index fieldset { padding: 5px 0; }
-.controller-projects.action-index li.root { border-top: 1px solid #a8a8a8; }
-.controller-projects.action-index #featured-projects-box li.root { border-top: none; }
-.controller-projects .contextual {
-  margin-top: 90px;
-  background-color: rgba(255,255,255,.8);
-  padding: 4px;
-}
-
-
-/*
-* Projet Home
-*/
-
-.controller-projects h2 {
-  margin: 0 0 10px 0;
-  padding: 0 0 0 5px;
-  display: block;
-  color: white;
-  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
-  font-weight: normal;
-  font-size: 20px;
-  background: transparent url(../images/projects-header-background.png) -15px 0 repeat-x;
-  height: 112px;
-}
-
-
-
-/*
 * Login
 */
 
@@ -400,6 +372,91 @@ div.news h3 {
   width: 130px;
   margin: 25px auto 50px auto;
 }
+
+
+/*
+* Projet Home
+*/
+
+.controller-projects.action-index .splitcontentleft  { width: 60%; }
+.controller-projects.action-index .splitcontentright { width: 36%; }
+
+.controller-projects.action-index h2 {
+  margin: 0 0 10px 0;
+  padding: 0 0 0 5px;
+  display: block;
+  color: white;
+  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  background: transparent url(../images/projects-index-header-background.png) -15px 0 repeat-x;
+  height: 112px;
+}
+
+.controller-projects.action-index fieldset { padding: 5px 0; }
+.controller-projects.action-index li.root { border-top: 1px solid #a8a8a8; }
+.controller-projects.action-index #featured-projects-box li.root { border-top: none; }
+.controller-projects .contextual {
+  margin-top: 90px;
+  background-color: rgba(255,255,255,.8);
+  padding: 4px;
+}
+
+/*
+* Projet Home
+*/
+
+.controller-projects h2 {
+  margin: 0 0 10px 0;
+  padding: 0 0 0 5px;
+  display: block;
+  color: white;
+  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  background: transparent url(../images/projects-header-background.png) -15px 0 repeat-x;
+  height: 112px;
+}
+
+.controller-projects.action-show .issues ul{ margin: 0; padding: 0; }
+.controller-projects.action-show .issues li{
+  display: inline;
+  list-style-type: none;
+  margin: 0 15px 0 0;
+}
+.controller-projects.action-show .issues p{ display: none; }
+
+.controller-projects.action-show .box {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.controller-projects #main .splitcontentleft,
+.controller-projects #main .splitcontentright {
+  width: auto;
+  float: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
