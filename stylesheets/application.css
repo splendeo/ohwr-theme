@@ -49,6 +49,31 @@ h4, .wiki h5 { font-size: 15px; }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { text-decoration: none; }
 
+/*
+* Forms/Input fields
+*/
+
+input[type="text"], input[type="password"], textarea, input[type="submit"] {
+  font-size: 13px;
+  margin-bottom: 5px;
+  padding: 4px;
+}
+
+input[type="text"], input[type="password"], textarea {
+  border: 1px solid #dadada;
+  background: #bbbbbb url(../images/input-background.png) 0 top repeat-x;
+}
+
+input[type="submit"] {
+  border: 1px solid #bbbbbb;
+  background: #dfdfdf url(../images/button-background.png) 0 top repeat-x;
+  cursor: pointer;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus, input[type="submit"]:focus {
+  border: 1px solid #222222;
+  background: #f1f1f1;
+}
 
 /*
 * Layout
@@ -308,6 +333,27 @@ div.news h3 {
   margin-top: 90px;
   background-color: rgba(255,255,255,.8);
   padding: 4px;
+}
+
+/*
+* Login
+*/
+
+.controller-account h2 {
+  margin: 0 0 10px 0;
+  padding: 0 0 0 5px;
+  display: block;
+  color: white;
+  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  background: transparent url(../images/account-header-background.png) -15px 0 repeat-x;
+  height: 112px;
+}
+
+#login-form table {
+  border: none;
+  background: none;
 }
 
 
