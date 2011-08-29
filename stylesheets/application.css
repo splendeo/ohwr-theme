@@ -75,6 +75,16 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus, input[ty
   background: #f1f1f1;
 }
 
+.required {
+  color: #c50000;
+}
+
+form.tabular input[type="text"],
+form.tabular input[type="password"] {
+  width: 300px;
+}
+
+
 /*
 * Layout
 */
@@ -324,8 +334,6 @@ div.news h3 {
   height: 112px;
 }
 
-.controller-projects.action-index .other-formats { clear: both; }
-
 .controller-projects.action-index fieldset { padding: 5px 0; }
 .controller-projects.action-index li.root { border-top: 1px solid #a8a8a8; }
 .controller-projects.action-index #featured-projects-box li.root { border-top: none; }
@@ -356,6 +364,22 @@ div.news h3 {
   background: none;
 }
 
+.controller-account .box {
+  border: none;
+  background: none;
+  width: 800px;
+  margin: auto;
+}
+
+ #user_firstname, #user_lastname, #user_mail, #my_account_form select {
+  width: 300px;
+}
+
+.controller-account form.tabular input[type='submit'] {
+  display: block;
+  width: 130px;
+  margin: 25px auto 50px auto;
+}
 
 
 
