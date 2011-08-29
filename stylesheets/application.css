@@ -295,9 +295,11 @@ div.news h3 {
   font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
   font-weight: normal;
   font-size: 20px;
-  background: transparent url(../images/projects-index-header-background.png) 0 0 no-repeat;
+  background: transparent url(../images/projects-index-header-background.png) -15px 0 repeat-x;
   height: 112px;
 }
+
+.controller-projects.action-index .other-formats { clear: both; }
 
 .controller-projects.action-index fieldset { padding: 5px 0; }
 .controller-projects.action-index li.root { border-top: 1px solid #a8a8a8; }
