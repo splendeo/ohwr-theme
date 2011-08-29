@@ -53,21 +53,22 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { text-decoration: no
 * Forms/Input fields
 */
 
-input[type="text"], input[type="password"], textarea, input[type="submit"] {
+input[type="text"], input[type="password"], textarea {
   font-size: 13px;
-  margin-bottom: 5px;
+  border: 1px solid #dadada;
+  background: #bbbbbb url(../images/input-background.png) 0 top repeat-x;
   padding: 4px;
 }
 
-input[type="text"], input[type="password"], textarea {
-  border: 1px solid #dadada;
-  background: #bbbbbb url(../images/input-background.png) 0 top repeat-x;
-}
-
 input[type="submit"] {
+  font-size: 15px;
+  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+  text-shadow: 0px 1px 1px white;
+  text-transform: uppercase;
   border: 1px solid #bbbbbb;
   background: #dfdfdf url(../images/button-background.png) 0 top repeat-x;
   cursor: pointer;
+  padding: 4px 15px;
 }
 
 input[type="text"]:focus, input[type="password"]:focus, textarea:focus, input[type="submit"]:focus {
@@ -103,7 +104,7 @@ form.tabular input[type="password"] {
   background: transparent url(../images/header-logo.png) 14px 10px no-repeat;
 }
 
-#content {
+#main {
   margin: 10px 20px;
   overflow: auto;
 }
@@ -337,11 +338,30 @@ div.news h3 {
 .controller-projects.action-index fieldset { padding: 5px 0; }
 .controller-projects.action-index li.root { border-top: 1px solid #a8a8a8; }
 .controller-projects.action-index #featured-projects-box li.root { border-top: none; }
-.controller-projects.action-index .contextual {
+.controller-projects .contextual {
   margin-top: 90px;
   background-color: rgba(255,255,255,.8);
   padding: 4px;
 }
+
+
+/*
+* Projet Home
+*/
+
+.controller-projects h2 {
+  margin: 0 0 10px 0;
+  padding: 0 0 0 5px;
+  display: block;
+  color: white;
+  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  background: transparent url(../images/projects-header-background.png) -15px 0 repeat-x;
+  height: 112px;
+}
+
+
 
 /*
 * Login
@@ -380,10 +400,6 @@ div.news h3 {
   width: 130px;
   margin: 25px auto 50px auto;
 }
-
-
-
-
 
 
 
