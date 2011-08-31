@@ -42,8 +42,8 @@ h1, h2, .wiki h1, .wiki h2 {
 }
 
 h3, h4, h5, .wiki h3, .wiki h4, .wiki h5 {
-  font-family: 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
   border-bottom: none;
+  font-family: 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
   font-weight: normal;
 }
 
@@ -286,6 +286,7 @@ form.tabular input[type="password"] {
   font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
   font-weight: normal;
   font-size: 20px;
+  text-transform: uppercase;
 }
 
 .controller-welcome #projects { padding: 0; margin-bottom: 30px; }
@@ -375,7 +376,7 @@ div.news h3 {
 
 
 /*
-* Projet Home
+* Projet#index
 */
 
 .controller-projects.action-index .splitcontentleft  { width: 60%; }
@@ -394,16 +395,24 @@ div.news h3 {
 }
 
 .controller-projects.action-index fieldset { padding: 5px 0; }
-.controller-projects.action-index li.root { border-top: 1px solid #a8a8a8; }
-.controller-projects.action-index #featured-projects-box li.root { border-top: none; }
+.controller-projects.action-index li.root { border-bottom: 1px solid #a8a8a8; }
+.controller-projects.action-index #featured-projects-box li.root { border-bottom: none; }
 .controller-projects .contextual {
   margin-top: 90px;
   background-color: rgba(255,255,255,.8);
   padding: 4px;
 }
 
+.controller-projects.action-index #content p { float: left; }
+.controller-projects.action-index #content p.other-formats { float: right; }
+
+ul.projects div.root a.project {
+  font-weight: normal;
+  font-family: 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
+}
+
 /*
-* Projet Home
+* Project(rest of pages)
 */
 
 .controller-projects h2 {
@@ -433,8 +442,8 @@ div.news h3 {
   margin: 30px 0;
 }
 
-.controller-projects #main .splitcontentleft,
-.controller-projects #main .splitcontentright {
+.controller-projects.action-show .splitcontentleft,
+.controller-projects.action-show .splitcontentright {
   width: auto;
   float: none;
 }
