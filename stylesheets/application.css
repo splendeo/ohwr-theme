@@ -418,7 +418,11 @@ ul.projects div.root a.project {
 * Project(rest of pages)
 */
 
-.controller-projects h2 {
+.controller-projects h2,
+.controller-issues h2,
+.controller-files h2,
+.controller-documents h2,
+.controller-wiki h2 {
   margin: 0 0 10px 0;
   padding: 0 0 0 5px;
   display: block;
