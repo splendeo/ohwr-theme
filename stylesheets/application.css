@@ -255,6 +255,17 @@ form.tabular input[type="password"] {
   margin: 0 1px;
 }
 
+/*
+* Page header
+*/
+
+
+.contextual {
+  margin-top: 90px;
+  background-color: rgba(255,255,255,.8);
+  padding: 4px;
+}
+
 
 /*
 * Footer
@@ -399,11 +410,6 @@ div.news h3 {
 .controller-projects.action-index fieldset { padding: 5px 0; }
 .controller-projects.action-index li.root { border-bottom: 1px solid #a8a8a8; }
 .controller-projects.action-index #featured-projects-box li.root { border-bottom: none; }
-.controller-projects .contextual {
-  margin-top: 90px;
-  background-color: rgba(255,255,255,.8);
-  padding: 4px;
-}
 
 .controller-projects.action-index #content p { float: left; }
 .controller-projects.action-index #content p.other-formats { float: right; }
