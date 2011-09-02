@@ -478,7 +478,13 @@ ul.projects div.root a.project {
   background-image: url(../images/news-header-background.png);
 }
 
+/*
+* search
+*/
 
+.controller-search #content h2 {
+  background-image: url(../images/search-header-background.png);
+}
 
 
 
