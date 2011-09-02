@@ -449,10 +449,11 @@ ul.projects div.root a.project {
 }
 
 /*
-* Activity
+* Activity/issues
 */
 
-.controller-activities #content h2 {
+.controller-activities #content h2,
+.controller-issues #content h2{
   background-image: url(../images/activities-header-background.png);
 }
 
@@ -467,7 +468,15 @@ ul.projects div.root a.project {
   background-image: url(../images/time-header-background.png);
 }
 
+/*
+* news/documents/files
+*/
 
+.controller-news #content h2,
+.controller-documents #content h2,
+.controller-files #content h2 {
+  background-image: url(../images/news-header-background.png);
+}
 
 
 
