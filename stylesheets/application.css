@@ -487,6 +487,28 @@ ul.projects div.root a.project {
 }
 
 
+/*
+* Time entries
+*/
+
+.controller-timelog h2,
+.controller-gantts h2,
+.controller-calendars h2{
+  margin: 0 0 10px 0;
+  padding: 0 0 0 5px;
+  display: block;
+  color: white;
+  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  background: transparent url(../images/time-header-background.png) -15px 0 repeat-x;
+  height: 112px;
+}
+
+
+
+
+
 
 
 
