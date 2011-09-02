@@ -259,13 +259,23 @@ form.tabular input[type="password"] {
 * Page header
 */
 
-
+#content h2 {
+  margin: 0 0 10px 0;
+  padding: 0 0 0 5px;
+  display: block;
+  color: white;
+  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  text-transform: uppercase;
+  background: transparent url(../images/projects-header-background.png) -15px 0 repeat-x;
+  height: 112px;
+}
 .contextual {
   margin-top: 90px;
   background-color: rgba(255,255,255,.8);
   padding: 4px;
 }
-
 
 /*
 * Footer
@@ -351,16 +361,8 @@ div.news h3 {
 * Login
 */
 
-.controller-account h2 {
-  margin: 0 0 10px 0;
-  padding: 0 0 0 5px;
-  display: block;
-  color: white;
-  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
-  font-weight: normal;
-  font-size: 20px;
-  background: transparent url(../images/account-header-background.png) -15px 0 repeat-x;
-  height: 112px;
+.controller-account #content h2 {
+  background-image: url(../images/account-header-background.png);
 }
 
 #login-form table {
@@ -395,16 +397,8 @@ div.news h3 {
 .controller-projects.action-index .splitcontentleft  { width: 60%; }
 .controller-projects.action-index .splitcontentright { width: 36%; }
 
-.controller-projects.action-index h2 {
-  margin: 0 0 10px 0;
-  padding: 0 0 0 5px;
-  display: block;
-  color: white;
-  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
-  font-weight: normal;
-  font-size: 20px;
-  background: transparent url(../images/projects-index-header-background.png) -15px 0 repeat-x;
-  height: 112px;
+.controller-projects.action-index #content h2 {
+  background-image: url(../images/projects-index-header-background.png);
 }
 
 .controller-projects.action-index fieldset { padding: 5px 0; }
@@ -423,22 +417,6 @@ ul.projects div.root a.project {
 /*
 * Project(rest of pages)
 */
-
-.controller-projects h2,
-.controller-issues h2,
-.controller-files h2,
-.controller-documents h2,
-.controller-wiki h2 {
-  margin: 0 0 10px 0;
-  padding: 0 0 0 5px;
-  display: block;
-  color: white;
-  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
-  font-weight: normal;
-  font-size: 20px;
-  background: transparent url(../images/projects-header-background.png) -15px 0 repeat-x;
-  height: 112px;
-}
 
 .controller-projects.action-show .issues ul{ margin: 0; padding: 0; }
 .controller-projects.action-show .issues li{
@@ -474,16 +452,8 @@ ul.projects div.root a.project {
 * Activity
 */
 
-.controller-activities h2 {
-  margin: 0 0 10px 0;
-  padding: 0 0 0 5px;
-  display: block;
-  color: white;
-  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
-  font-weight: normal;
-  font-size: 20px;
-  background: transparent url(../images/activities-header-background.png) -15px 0 repeat-x;
-  height: 112px;
+.controller-activities #content h2 {
+  background-image: url(../images/activities-header-background.png);
 }
 
 
@@ -491,19 +461,14 @@ ul.projects div.root a.project {
 * Time entries
 */
 
-.controller-timelog h2,
-.controller-gantts h2,
-.controller-calendars h2{
-  margin: 0 0 10px 0;
-  padding: 0 0 0 5px;
-  display: block;
-  color: white;
-  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
-  font-weight: normal;
-  font-size: 20px;
-  background: transparent url(../images/time-header-background.png) -15px 0 repeat-x;
-  height: 112px;
+.controller-timelog #content h2,
+.controller-gantts #content h2,
+.controller-calendars #content h2{
+  background-image: url(../images/time-header-background.png);
 }
+
+
+
 
 
 
