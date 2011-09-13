@@ -49,9 +49,9 @@ h3, h4, h5, .wiki h3, .wiki h4, .wiki h5 {
 
 h1, .wiki h1 { font-size: 34px; text-transform: uppercase; }
 h2, .wiki h2 { font-size: 28px; text-transform: uppercase; }
-h3, .wiki h3 { font-size: 18px; }
-h4, .wiki h4 { font-size: 16px; }
-h4, .wiki h5 { font-size: 14px; }
+h3, .wiki h3 { font-size: 20px; }
+h4, .wiki h4 { font-size: 18px; }
+h4, .wiki h5 { font-size: 16px; }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { text-decoration: none; }
 
@@ -302,12 +302,14 @@ form.tabular input[type="password"] {
   font-weight: normal;
   font-size: 20px;
   text-transform: uppercase;
+  background: transparent url(../images/home-featured-projects-title-background.png) 0 0 repeat-x;
+  height: 25px;
 }
+#featured-projects-list h4 a { font-weight: normal; }
+#featured-projects-list .date { font-weight: normal; font-size: 70%; }
 
 .controller-welcome #projects { padding: 0; margin-bottom: 30px; }
-
 .controller-welcome #projects a:hover { text-decoration: none;}
-
 .controller-welcome #projects a {
   background: transparent url(../images/home-projects-banner.png) -15px 0 repeat-x;
   height: 112px;
@@ -315,10 +317,6 @@ form.tabular input[type="password"] {
 .controller-welcome #welcome  {
   background: transparent url(../images/home-welcome-background.png) 0 0 repeat-x;
   height: 112px;
-}
-#featured-projects-title  {
-  background: transparent url(../images/home-featured-projects-title-background.png) 0 0 repeat-x;
-  height: 25px;
 }
 
 .controller-welcome .box {
