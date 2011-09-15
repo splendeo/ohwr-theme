@@ -220,7 +220,7 @@ form.tabular input[type="password"] {
   margin: 0;
   padding: 0 0 0 128px;
   margin: 0 30px;
-  height: 110px;
+  height: 115px;
   position: relative;
   border-bottom: 1px solid #a8a8a8;
 }
@@ -235,6 +235,7 @@ form.tabular input[type="password"] {
   word-spacing: -0.041em;
   line-height: 1.1;
   text-transform: uppercase;
+  margin: 0;
 }
 
 #header h1 a.ancestor,
@@ -245,8 +246,13 @@ form.tabular input[type="password"] {
 }
 
 #quick-search {
-  margin-top: -35px;
+  margin-top: -15px;
   float:right;
+}
+
+#quick-search input,
+#quick-search select {
+  font-size: 80%;
 }
 
 
