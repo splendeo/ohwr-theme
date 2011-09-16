@@ -1282,6 +1282,7 @@ h2 img { vertical-align:middle; }
 * Home
 */
 
+.controller-welcome #header { border: none; }
 .controller-welcome .splitcontentleft  { width: 67%; }
 .controller-welcome .splitcontentright { width: 30%; }
 
