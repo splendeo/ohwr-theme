@@ -1100,7 +1100,7 @@ padding-bottom: 3px;
 .icon-add { background-image: url(../images/iconic/plus_alt_16x16.png); }
 .icon-edit { background-image: url(../images/iconic/pen_16x16.png); }
 .icon-copy { background-image: url(../images/iconic/copy_16x16.png); }
-.icon-duplicate { background-image: url(../images/duplicate_16x16.png); }
+.icon-duplicate { background-image: url(../images/iconic/duplicate_16x16.png); }
 .icon-del { background-image: url(../images/iconic/trash_stroke_16x16.png); }
 .icon-move { background-image: url(../images/iconic/move_16x16.png); }
 .icon-save { background-image: url(../images/iconic/save_16x16.png); }
@@ -1269,7 +1269,7 @@ h2 img { vertical-align:middle; }
   background: transparent url(../images/projects-header-background.png) -15px 0 repeat-x;
   height: 112px;
 }
-.contextual {
+#content .contextual {
   float:right;
   white-space: nowrap;
   line-height:1.4em;
@@ -1277,6 +1277,11 @@ h2 img { vertical-align:middle; }
   font-size:0.9em;
   background-color: rgba(255,255,255,.8);
   padding: 4px 0;
+}
+#content div .contextual {
+  padding: 0;
+  background: none;
+  margin-top: 0;
 }
 .contextual a,
 .contextual input,
