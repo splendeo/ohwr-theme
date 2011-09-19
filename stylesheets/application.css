@@ -201,7 +201,7 @@ form.tabular input[type="password"] {
 }
 
 #wrapper2{
-  background: transparent url(../images/header-logo.png) 14px 10px no-repeat;
+  background: transparent url(../images/header-logo.png) 25px 10px no-repeat;
 }
 
 #main {
@@ -249,6 +249,10 @@ form.tabular input[type="password"] {
   float:right;
 }
 
+#quick-search input,
+#quick-search select {
+  font-size: 80%;
+}
 
 /*
 * Footer
@@ -321,23 +325,23 @@ form.tabular input[type="password"] {
 #admin-menu li { margin: 0; padding: 0 0 12px 0; list-style-type:none; }
 
 #admin-menu a {
-  background: transparent none 0% 40% no-repeat;
-  padding: 2px 0 3px 20px;
+  background: transparent none 0% 50% no-repeat;
+  padding: 2px 0 3px 22px;
 }
-#admin-menu a.projects { background-image: url(../images/projects.png); }
-#admin-menu a.users { background-image: url(../images/user.png); }
-#admin-menu a.groups { background-image: url(../images/group.png); }
-#admin-menu a.roles { background-image: url(../images/database_key.png); }
-#admin-menu a.trackers { background-image: url(../images/ticket.png); }
-#admin-menu a.issue_statuses { background-image: url(../images/ticket_edit.png); }
-#admin-menu a.workflows { background-image: url(../images/ticket_go.png); }
-#admin-menu a.custom_fields { background-image: url(../images/textfield.png); }
-#admin-menu a.enumerations { background-image: url(../images/text_list_bullets.png); }
-#admin-menu a.settings { background-image: url(../images/changeset.png); }
-#admin-menu a.plugins { background-image: url(../images/plugin.png); }
-#admin-menu a.info { background-image: url(../images/help.png); }
-#admin-menu a.server_authentication { background-image: url(../images/server_key.png); }
-
+#admin-menu a.projects { background-image: url(../images/iconic/share_16x16.png); }
+#admin-menu a.users { background-image: url(../images/iconic/user_16x16.png); }
+#admin-menu a.groups { background-image: url(../images/iconic/group_16x16.png); }
+#admin-menu a.roles { background-image: url(../images/iconic/key_stroke_16x16.png); }
+#admin-menu a.trackers { background-image: url(../images/iconic/pin_16x16.png); }
+#admin-menu a.issue_statuses { background-image: url(../images/iconic/pen_16x16.png); }
+#admin-menu a.workflows { background-image: url(../images/iconic/spin_alt_16x16.png); }
+#admin-menu a.custom_fields { background-image: url(../images/iconic/custom_field_16x16.png); }
+#admin-menu a.enumerations { background-image: url(../images/iconic/enumerations_16x16.png); }
+#admin-menu a.settings { background-image: url(../images/iconic/cog_alt_16x16.png); }
+#admin-menu a.plugins { background-image: url(../images/iconic/sun_alt_stroke_16x16.png); }
+#admin-menu a.info { background-image: url(../images/iconic/question_mark_16x16.png); }
+#admin-menu a.server_authentication { background-image: url(../images/iconic/key_fill_16x16.png); }
+#admin-menu a.system-notification { background-image: url(../images/iconic/right_quote_16x16.png); }
 
 /**** Sidebar ****/
 #sidebar{ float: right; width: 22%; position: relative; z-index: 9; padding: 0; margin: 0;}
@@ -1093,25 +1097,25 @@ padding-top: 2px;
 padding-bottom: 3px;
 }
 
-.icon-add { background-image: url(../images/add.png); }
-.icon-edit { background-image: url(../images/edit.png); }
-.icon-copy { background-image: url(../images/copy.png); }
-.icon-duplicate { background-image: url(../images/duplicate.png); }
-.icon-del { background-image: url(../images/delete.png); }
-.icon-move { background-image: url(../images/move.png); }
-.icon-save { background-image: url(../images/save.png); }
-.icon-cancel { background-image: url(../images/cancel.png); }
+.icon-add { background-image: url(../images/iconic/plus_alt_16x16.png); }
+.icon-edit { background-image: url(../images/iconic/pen_16x16.png); }
+.icon-copy { background-image: url(../images/iconic/copy_16x16.png); }
+.icon-duplicate { background-image: url(../images/duplicate_16x16.png); }
+.icon-del { background-image: url(../images/iconic/trash_stroke_16x16.png); }
+.icon-move { background-image: url(../images/iconic/move_16x16.png); }
+.icon-save { background-image: url(../images/iconic/save_16x16.png); }
+.icon-cancel { background-image: url(../images/iconic/x_alt_16x16.png); }
 .icon-multiple { background-image: url(../images/table_multiple.png); }
-.icon-folder { background-image: url(../images/folder.png); }
-.open .icon-folder { background-image: url(../images/folder_open.png); }
-.icon-package { background-image: url(../images/package.png); }
-.icon-user { background-image: url(../images/user.png); }
-.icon-projects { background-image: url(../images/projects.png); }
-.icon-help { background-image: url(../images/help.png); }
-.icon-attachment  { background-image: url(../images/attachment.png); }
-.icon-history  { background-image: url(../images/history.png); }
-.icon-time  { background-image: url(../images/time.png); }
-.icon-time-add  { background-image: url(../images/time_add.png); }
+.icon-folder { background-image: url(../images/iconic/folder_stroke_16x16.png); }
+.open .icon-folder { background-image: url(../images/iconic/folder_open_16x16.png); }
+.icon-package { background-image: url(../images/iconic/box_16x16.png); }
+.icon-user { background-image: url(../images/iconic/user_16x16.png); }
+.icon-projects { background-image: url(../images/iconic/share_16x16.png); }
+.icon-help { background-image: url(../images/iconic/question_mark_16x16.png); }
+.icon-attachment  { background-image: url(../images/iconic/attachment_16x16.png); }
+.icon-history  { background-image: url(../images/iconic/movie_16x16.png); }
+.icon-time  { background-image: url(../images/iconic/clock_16x16.png); }
+.icon-time-add  { background-image: url(../images/iconic/clock_add.png); }
 .icon-stats  { background-image: url(../images/stats.png); }
 .icon-warning  { background-image: url(../images/warning.png); }
 .icon-fav  { background-image: url(../images/fav.png); }
