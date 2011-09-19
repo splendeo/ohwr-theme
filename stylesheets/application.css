@@ -334,7 +334,7 @@ form.tabular input[type="password"] {
 #admin-menu a.roles { background-image: url(../images/iconic/key_stroke_16x16.png); }
 #admin-menu a.trackers { background-image: url(../images/iconic/pin_16x16.png); }
 #admin-menu a.issue_statuses { background-image: url(../images/iconic/pen_16x16.png); }
-#admin-menu a.workflows { background-image: url(../images/iconic/spin_alt_16x16.png); }
+#admin-menu a.workflows { background-image: url(../images/iconic/spin_16x16.png); }
 #admin-menu a.custom_fields { background-image: url(../images/iconic/custom_field_16x16.png); }
 #admin-menu a.enumerations { background-image: url(../images/iconic/enumerations_16x16.png); }
 #admin-menu a.settings { background-image: url(../images/iconic/cog_alt_16x16.png); }
