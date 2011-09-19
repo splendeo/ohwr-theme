@@ -1274,9 +1274,14 @@ h2 img { vertical-align:middle; }
   white-space: nowrap;
   line-height:1.4em;
   margin-top:90px;
-  padding: 4px;
   font-size:0.9em;
   background-color: rgba(255,255,255,.8);
+  padding: 4px 0;
+}
+.contextual a,
+.contextual input,
+.contextual select {
+  margin: 4px;
 }
 .contextual input, .contextual select {font-size:0.9em;}
 .message .contextual { margin-top: 0; }
