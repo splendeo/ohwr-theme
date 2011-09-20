@@ -1289,15 +1289,12 @@ h2 img { vertical-align:middle; }
   float:right;
   white-space: nowrap;
   line-height:1.4em;
-  margin-top:90px;
   font-size:0.9em;
-  background-color: rgba(255,255,255,.8);
-  padding: 4px 0;
 }
-#content div .contextual {
-  padding: 0;
-  background: none;
-  margin-top: 0;
+#content > .contextual:first-child {
+  padding: 4px 0;
+  margin-top:90px;
+  background-color: rgba(255,255,255,.8);
 }
 .contextual a,
 .contextual input,
