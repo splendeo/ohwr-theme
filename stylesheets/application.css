@@ -62,6 +62,33 @@ a.issue.closed:visited {
   text-decoration: line-through;
 }
 
+/**
+* Image links replacements
+*/
+
+.checkbox a img { display: none; }
+.checkbox a {
+  display: block;
+  padding: 10px 0 0 0;
+  overflow: hidden;
+  background-image: url("../images/iconic/check_12x10.png");
+  background-repeat: no-repeat;
+  height: 0px !important;
+  height /**/:10px;
+}
+
+.calendar-trigger {
+  display: inline-block;
+  padding: 16px 0 0 0;
+  overflow: hidden;
+  background-image: url("../images/iconic/calendar_16x16.png");
+  background-repeat: no-repeat;
+  height: 0px !important;
+  height /**/:16px;
+  width: 16px;
+}
+
+
 /*
 * Misc types
 */
@@ -1245,30 +1272,6 @@ h2 img { vertical-align:middle; }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 * Page header
 */
@@ -1303,7 +1306,6 @@ h2 img { vertical-align:middle; }
 }
 .contextual input, .contextual select {font-size:0.9em;}
 .message .contextual { margin-top: 0; }
-
 
 /*
 * Home
