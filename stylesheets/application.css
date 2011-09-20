@@ -1285,7 +1285,7 @@ h2 img { vertical-align:middle; }
   background: transparent url(../images/projects-header-background.png) -15px 0 repeat-x;
   height: 112px;
 }
-#content .contextual {
+.contextual {
   float:right;
   white-space: nowrap;
   line-height:1.4em;
