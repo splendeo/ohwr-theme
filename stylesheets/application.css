@@ -3,7 +3,6 @@
 
 html {
   overflow-y:scroll;
-  background: #d7d7d7 url(../images/background.png);
 }
 
 body {
@@ -13,10 +12,7 @@ body {
   margin: 0 100px 100px 100px;
   padding: 0;
   min-width: 900px;
-  background: white;
-  box-shadow: 0px 0px 8px rgba(0,0,0,.5);
-  -moz-box-shadow: 0px 0px 8px rgba(0,0,0,.5);
-  -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,.5);
+  background: #d7d7d7 url(../images/background.png);
 }
 
 /*
@@ -33,9 +29,9 @@ h3, h4, h5, .wiki h3, .wiki h4, .wiki h5 {
 
 h1, .wiki h1 { font-size: 34px; text-transform: uppercase; }
 h2, .wiki h2 { font-size: 28px; text-transform: uppercase; }
-h3, .wiki h3 { font-size: 20px; }
-h4, .wiki h4 { font-size: 18px; }
-h4, .wiki h5 { font-size: 16px; }
+h3, .wiki h3 { font-size: 17px; }
+h4, .wiki h4 { font-size: 15px; }
+h5, .wiki h5 { font-size: 12px; }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover { text-decoration: none; }
 
@@ -227,6 +223,9 @@ form.tabular input[type="password"] {
 /***** Layout *****/
 #wrapper{
   background: white url(../images/white-header-logo.png) 80% -100px no-repeat;
+  box-shadow: 0px 0px 8px rgba(0,0,0,.5);
+  -moz-box-shadow: 0px 0px 8px rgba(0,0,0,.5);
+  -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,.5);
 }
 
 #wrapper2{
@@ -1530,7 +1529,7 @@ ul.projects div.root a.project {
 .fuchsia{ color: fuchsia; }
 
 /* staging env is red */
-body.environment-staging{ background-color: #FF3F3F; }
+body.environment-staging{ background: #FF3F3F none; }
 body.environment-staging #main a   { color: #CC0000; }
 
 
