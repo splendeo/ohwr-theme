@@ -196,7 +196,8 @@ form.tabular input[type="password"] {
 #top-menu .my-page,
 #top-menu .projects,
 #top-menu .administration,
-#top-menu .login {
+#top-menu .login,
+#top-menu .companies {
   margin: 0 15px 0 0;
 }
 
@@ -209,7 +210,8 @@ form.tabular input[type="password"] {
 #top-menu .home,
 #top-menu .my-page,
 #top-menu .projects,
-#top-menu .administration { float: left; }
+#top-menu .administration,
+#top-menu .companies{ float: left; }
 
 #top-menu .help {
   position: fixed;
@@ -1528,8 +1530,7 @@ ul.projects div.root a.project {
 .fuchsia{ color: fuchsia; }
 
 /* staging env is red */
-body.environment-staging #top-menu { background-color: #DD1111; }
-body.environment-staging #header   { background-color: #FF3F3F; }
+body.environment-staging{ background-color: #FF3F3F; }
 body.environment-staging #main a   { color: #CC0000; }
 
 
