@@ -217,6 +217,7 @@ form.tabular input[type="password"] {
   font-size: 1.5em;
   padding: 3px 18px 5px 18px;
   background-color: rgba(50,50,50,0.5);
+  * background-color: rgb(100,100,100);
 }
 
 
@@ -1299,10 +1300,12 @@ h2 img { vertical-align:middle; }
   white-space: nowrap;
   line-height:1.4em;
   font-size:0.9em;
+  *float: none; /* ie7 hacks */
 }
 #content > .contextual:first-child {
   padding: 4px 0;
   margin-top:90px;
+  *margin-top: 0; /* ie7 hacks */
   background-color: rgba(255,255,255,.8);
 }
 .controller-wiki #content > .contextual:first-child {
