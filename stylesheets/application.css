@@ -217,7 +217,8 @@ form.tabular input[type="password"] {
   font-size: 1.5em;
   padding: 3px 18px 5px 18px;
   background-color: rgba(50,50,50,0.5);
-  * background-color: rgb(100,100,100);
+  background-color: rgb(100,100,100)\9; /* ie8 hack */
+  * background-color: rgb(100,100,100); /* ie7 hack */
 }
 
 
@@ -1301,13 +1302,14 @@ h2 img { vertical-align:middle; }
   white-space: nowrap;
   line-height:1.4em;
   font-size:0.9em;
-  *float: none; /* ie7 hacks */
+  *float: none; /* ie7 hack */
 }
 #content > .contextual:first-child {
   padding: 4px 0;
   margin-top:90px;
-  *margin-top: 0; /* ie7 hacks */
+  *margin-top: 0; /* ie7 hack */
   background-color: rgba(255,255,255,.8);
+  background-color: white\9; /* ie8 hack */
 }
 .controller-wiki #content > .contextual:first-child {
   padding: 0;
