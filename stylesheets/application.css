@@ -1529,7 +1529,7 @@ ul.projects div.root a.project {
 * wiki
 */
 .controller-wiki #content h2,
-.controller-repository #content h2,
+.controller-repositories #content h2,
 #content .errorExplanation h2 {
   font-family: 'PT Sans Narrow', 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
   font-size: 26px;
