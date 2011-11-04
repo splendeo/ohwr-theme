@@ -1270,33 +1270,6 @@ h2 img { vertical-align:middle; }
 }
 
 
-
-
-
-
-
-
-
-
-
-
-/*
-* Page header
-*/
-
-#content h2 {
-  margin: 0 0 10px 0;
-  padding: 0 0 0 5px;
-  display: block;
-  color: white;
-  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
-  font-weight: normal;
-  font-size: 20px;
-  text-transform: uppercase;
-  background: transparent url(../images/projects-header-background.png) -15px 0 repeat-x;
-  height: 112px;
-}
-
 /*
 * Contextual menu
 */
@@ -1399,12 +1372,74 @@ div.news h3 {
 }
 
 /*
-* Login
+* Page headers for some specific controllers
 */
+
+.controller-account #content h2,
+.controller-projects #content h2,
+.controller-activities #content h2,
+.controller-issues #content h2,
+.controller-timelog #content h2,
+.controller-gantts #content h2,
+.controller-calendars #content h2,
+.controller-news #content h2,
+.controller-documents #content h2,
+.controller-files #content h2,
+.controller-search #content h2,
+.controller-companies #content h2{
+
+  margin: 0 0 10px 0;
+  padding: 0 0 0 5px;
+  display: block;
+  color: white;
+  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  text-transform: uppercase;
+  height: 112px;
+  background-color: transparent;
+  background-position: -15px 0;
+  background-repeat: repeat-x;
+}
+
+.controller-projects #content h2,
+.controller-companies #content h2 {
+  background-image: url(../images/projects-header-background.png);
+}
 
 .controller-account #content h2 {
   background-image: url(../images/account-header-background.png);
 }
+
+.controller-projects.action-index #content h2 {
+  background-image: url(../images/projects-index-header-background.png);
+}
+
+.controller-activities #content h2,
+.controller-issues #content h2,
+.controller-projects.action-settings #content h2{
+  background-image: url(../images/activities-header-background.png);
+}
+
+.controller-timelog #content h2,
+.controller-gantts #content h2,
+.controller-calendars #content h2{
+  background-image: url(../images/time-header-background.png);
+}
+
+.controller-news #content h2,
+.controller-documents #content h2,
+.controller-files #content h2 {
+  background-image: url(../images/news-header-background.png);
+}
+
+.controller-search #content h2 {
+  background-image: url(../images/search-header-background.png);
+}
+
+/*
+* Login
+*/
 
 #login-form table {
   border: none;
@@ -1438,9 +1473,7 @@ div.news h3 {
 .controller-projects.action-index .splitcontentleft  { width: 60%; }
 .controller-projects.action-index .splitcontentright { width: 36%; }
 
-.controller-projects.action-index #content h2 {
-  background-image: url(../images/projects-index-header-background.png);
-}
+
 
 .controller-projects.action-index fieldset { padding: 5px 0; }
 .controller-projects.action-index li.root { border-bottom: 1px solid #a8a8a8; }
@@ -1490,49 +1523,8 @@ ul.projects div.root a.project {
 }
 
 /*
-* Activity/issues
+* Error explanation
 */
-
-.controller-activities #content h2,
-.controller-issues #content h2,
-.controller-projects.action-settings #content h2{
-  background-image: url(../images/activities-header-background.png);
-}
-
-
-/*
-* Time entries
-*/
-
-.controller-timelog #content h2,
-.controller-gantts #content h2,
-.controller-calendars #content h2{
-  background-image: url(../images/time-header-background.png);
-}
-
-/*
-* news/documents/files
-*/
-
-.controller-news #content h2,
-.controller-documents #content h2,
-.controller-files #content h2 {
-  background-image: url(../images/news-header-background.png);
-}
-
-/*
-* search
-*/
-
-.controller-search #content h2 {
-  background-image: url(../images/search-header-background.png);
-}
-
-/*
-* wiki
-*/
-.controller-wiki #content h2,
-.controller-repositories #content h2,
 #content .errorExplanation h2 {
   font-family: 'PT Sans Narrow', 'HelveticaNeue-CondensedBold', 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif;
   font-size: 26px;
