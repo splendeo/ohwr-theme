@@ -189,14 +189,8 @@ form.tabular input[type="password"] {
   padding: 0;
 }
 
-#top-menu #loggedas,
-#top-menu .my-account,
-#top-menu .home,
-#top-menu .my-page,
-#top-menu .projects,
-#top-menu .administration,
-#top-menu .login,
-#top-menu .companies {
+#top-menu a {
+  float: left;
   margin: 0 15px 0 0;
 }
 
@@ -206,14 +200,18 @@ form.tabular input[type="password"] {
   color: #bbb;
 }
 
-#top-menu .home,
-#top-menu .my-page,
-#top-menu .projects,
-#top-menu .administration,
-#top-menu .companies{ float: left; }
+#top-menu #account a{
+  margin: 0 0 0 15px;
+}
+
+#top-menu #loggedas a {
+  float: none;
+  margin: 0;
+}
 
 #top-menu .help {
   position: fixed;
+  float: none;
   top: 115px;
   left: 0;
   color: white;
@@ -1386,6 +1384,7 @@ div.news h3 {
 .controller-documents #content h2,
 .controller-files #content h2,
 .controller-search #content h2,
+.controller-admin #content h2,
 .controller-companies #content h2{
 
   margin: 0 0 10px 0;
@@ -1403,6 +1402,7 @@ div.news h3 {
 }
 
 .controller-projects #content h2,
+.controller-admin #content h2,
 .controller-companies #content h2 {
   background-image: url(../images/projects-header-background.png);
 }
