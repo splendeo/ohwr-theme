@@ -1279,7 +1279,21 @@ h2 img { vertical-align:middle; }
   font-size:0.9em;
   *float: none; /* ie7 hack */
 }
-#content > .contextual:first-child {
+
+
+.controller-account #content > .contextual:first-child,
+.controller-projects #content > .contextual:first-child,
+.controller-activities #content > .contextual:first-child,
+.controller-issues #content > .contextual:first-child,
+.controller-timelog #content > .contextual:first-child,
+.controller-gantts #content > .contextual:first-child,
+.controller-calendars #content > .contextual:first-child,
+.controller-news #content > .contextual:first-child,
+.controller-documents #content > .contextual:first-child,
+.controller-files #content > .contextual:first-child,
+.controller-search #content > .contextual:first-child,
+.controller-admin #content > .contextual:first-child,
+.controller-companies #content > .contextual:first-child {
   padding: 4px 0;
   margin-top:90px;
   *margin-top: 0; /* ie7 hack */
@@ -1328,7 +1342,7 @@ h2 img { vertical-align:middle; }
 #featured-projects-list h4 a { font-weight: normal; }
 #featured-projects-list .date { font-weight: normal; font-size: 70%; }
 
-.controller-welcome #projects { padding: 0; margin-bottom: 30px; }
+.controller-welcome #projects { padding: 0; margin-bottom: 30px; margin-top: 0;}
 .controller-welcome #projects a:hover { text-decoration: none;}
 .controller-welcome #projects a {
   background: transparent url(../images/home-projects-banner.png) -15px 0 repeat-x;
