@@ -61,6 +61,13 @@ a.issue.closed:visited {
   text-decoration: line-through;
 }
 
+.external {
+  background-position: 0% 60%;
+  background-repeat: no-repeat;
+  padding-left: 12px;
+  background-image: url(../images/external.png);
+}
+
 /**
 * Image links replacements
 */
@@ -1002,12 +1009,6 @@ div.wiki table, div.wiki td, div.wiki th {
     padding: 4px;
 }
 
-div.wiki .external {
-    background-position: 0% 60%;
-    background-repeat: no-repeat;
-    padding-left: 12px;
-    background-image: url(../images/external.png);
-}
 
 div.wiki a.new {
     color: #b73535;
