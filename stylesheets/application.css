@@ -1388,19 +1388,21 @@ div.news h3 {
 * Page headers for some specific controllers
 */
 
-.controller-account #content h2,
-.controller-projects #content h2,
-.controller-activities #content h2,
-.controller-issues #content h2,
-.controller-timelog #content h2,
-.controller-gantts #content h2,
-.controller-calendars #content h2,
-.controller-news #content h2,
-.controller-documents #content h2,
-.controller-files #content h2,
-.controller-search #content h2,
-.controller-admin #content h2,
-.controller-companies #content h2{
+.controller-account #content > h2,
+.controller-projects #content > h2,
+.controller-activities #content > h2,
+.controller-issues #content > h2,
+.controller-timelog #content > h2,
+.controller-gantts #content > h2,
+.controller-calendars #content > h2,
+.controller-news #content > h2,
+.controller-documents #content > h2,
+.controller-files #content > h2,
+.controller-search #content > h2,
+.controller-admin #content > h2,
+.controller-companies #content > h2,
+.controller-licenses #content > h2,
+.controller-license_versions #content > h2{
 
   margin: 0 0 10px 0;
   padding: 0 0 0 5px;
@@ -1414,41 +1416,36 @@ div.news h3 {
   background-color: transparent;
   background-position: -15px 0;
   background-repeat: repeat-x;
-}
-
-.controller-projects #content h2,
-.controller-admin #content h2,
-.controller-companies #content h2 {
   background-image: url(../images/projects-header-background.png);
 }
 
-.controller-account #content h2 {
+.controller-account #content > h2 {
   background-image: url(../images/account-header-background.png);
 }
 
-.controller-projects.action-index #content h2 {
+.controller-projects.action-index #content > h2 {
   background-image: url(../images/projects-index-header-background.png);
 }
 
-.controller-activities #content h2,
-.controller-issues #content h2,
-.controller-projects.action-settings #content h2{
+.controller-activities #content > h2,
+.controller-issues #content > h2,
+.controller-projects.action-settings #content > h2{
   background-image: url(../images/activities-header-background.png);
 }
 
-.controller-timelog #content h2,
-.controller-gantts #content h2,
-.controller-calendars #content h2{
+.controller-timelog #content > h2,
+.controller-gantts #content > h2,
+.controller-calendars #content > h2{
   background-image: url(../images/time-header-background.png);
 }
 
-.controller-news #content h2,
-.controller-documents #content h2,
-.controller-files #content h2 {
+.controller-news #content > h2,
+.controller-documents #content > h2,
+.controller-files #content > h2 {
   background-image: url(../images/news-header-background.png);
 }
 
-.controller-search #content h2 {
+.controller-search #content > h2 {
   background-image: url(../images/search-header-background.png);
 }
 
