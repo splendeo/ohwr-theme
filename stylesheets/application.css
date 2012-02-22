@@ -162,6 +162,12 @@ form.tabular input[type="text"],
 form.tabular input[type="password"] {
   width: 300px;
 }
+form.tabular input[size="10"] {
+  width: 100px;
+}
+form.tabular input[size="3"] {
+  width: 100px;
+}
 
 /*
 * Top-menu
@@ -1573,8 +1579,6 @@ ul.projects div.root a.project {
 /* staging env is red */
 body.environment-staging{ background: #FF3F3F none; }
 body.environment-staging #main a   { color: #CC0000; }
-
-
 
 
 
