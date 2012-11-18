@@ -1543,6 +1543,21 @@ ul.projects div.root a.project {
 }
 
 /*
+* Custom fields
+*/
+
+.custom_field span {
+  display: none;
+}
+
+i.boolean_true {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  background: no-repeat url(../images/iconic/check_16x16.png);
+}
+
+/*
 * Error explanation
 */
 #content .errorExplanation h2 {
@@ -1558,17 +1573,6 @@ ul.projects div.root a.project {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 .red{ color: red; }
 .green{ color: green; }
 .blue{ color: blue; }
@@ -1579,7 +1583,3 @@ ul.projects div.root a.project {
 /* staging env is red */
 body.environment-staging{ background: #FF3F3F none; }
 body.environment-staging #main a   { color: #CC0000; }
-
-
-
-
