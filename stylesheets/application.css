@@ -1393,6 +1393,19 @@ div.news h3 {
 }
 
 /*
+* News box
+*/
+
+.news.box p {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.news.box hr {
+  margin: 1em 0;
+}
+
+/*
 * Page headers for some specific controllers
 */
 
